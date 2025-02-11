@@ -344,13 +344,13 @@ Ok
 
 
 
-	<p>GRANT STAUS: ACTIVE <span id="currentDate"></span></p> 
+	<p>APPLY BEFORE <span id="currentDate"></span></p> 
  
     <script> 
         // Get the current date 
-        const today = new Date(); 
+        const tomorrow = new Date(); 
         // Format the date as needed (e.g., MM/DD/YYYY) 
-        const formattedDate = today.toLocaleDateString(); 
+        const formattedDate = tomorrow.toLocaleDateString(); 
         // Display the date in the HTML 
         document.getElementById("currentDate").textContent = formattedDate; 
     </script> 
