@@ -351,13 +351,15 @@ Ok
 
 	<p> APPLY BEFORE:<b> <span id="currentDate" style="skyblue"></span></b></p> 
  
+    <p>Today's date: <span id="currentDate"></span></p> 
+ 
     <script> 
         // Get the current date 
-        const tomorrow = new Date(); 
+        const today = new Date(); 
         // Format the date as needed (e.g., MM/DD/YYYY) 
-        const formattedDate = tomorrow.toLocaleDateString(); 
+        const formattedDate = today.toLocaleDateString(); 
         // Display the date in the HTML 
-        document.getElementById("tomorrowDate").textContent = formattedDate; 
+        document.getElementById("currentDate").textContent = formattedDate; 
     </script> 
 
 
