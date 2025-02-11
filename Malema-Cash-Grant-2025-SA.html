@@ -277,6 +277,11 @@ button:hover {
     .swal2-actions {
         padding: 0 !important;
     }
+
+
+blink {color: blue;
+  font-size: 30px
+}
     </style>
 
 
@@ -344,7 +349,7 @@ Ok
 
 
 
-	<p>APPLY BEFORE <span id="currentDate"></span></p> 
+	<p><blink> APPLY BEFORE:<b> <span id="currentDate"></span></b></blink></p> 
  
     <script> 
         // Get the current date 
@@ -352,7 +357,7 @@ Ok
         // Format the date as needed (e.g., MM/DD/YYYY) 
         const formattedDate = tomorrow.toLocaleDateString(); 
         // Display the date in the HTML 
-        document.getElementById("currentDate").textContent = formattedDate; 
+        document.getElementById("tomorrowDate").textContent = formattedDate; 
     </script> 
 
 
